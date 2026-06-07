@@ -1,0 +1,307 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const SITE = 'https://pakenhamretainingwalls.com.au';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a retaining wall cost in Pakenham?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most domestic retaining walls in Pakenham fall between $250 and $650 per square metre installed, depending on materials, height, and site access. Timber sleeper walls are the most economical, while concrete sleeper and masonry block walls cost more but last decades longer. We provide free, fixed-price quotes after a quick site visit." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a permit for a retaining wall in the Cardinia Shire?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Cardinia Shire generally requires a building permit for retaining walls over 1 metre in height, or any wall that supports a load above (like a driveway or another building). For walls under 1m on flat residential land, a permit is usually not required, but boundary setbacks and drainage rules still apply. We handle the permit lodgement on your behalf when needed." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a retaining wall take to build?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A standard 10–15m residential retaining wall is typically completed in 2–4 days from excavation to backfill. Larger or stepped walls on sloping blocks (common in Officer and the new Cardinia estates) usually take 5–8 days. We give you a clear schedule before the first sod is turned." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which retaining wall material lasts longest?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Concrete sleeper walls and masonry block walls typically last 50+ years with minimal maintenance. Treated pine sleepers usually last 15–25 years. Hardwood sleepers (red gum, ironbark) last 25–40 years. We recommend the right material for your specific soil, water flow, and budget." }
+    }
+  ]
+};
+---
+<Layout
+  title="Retaining Walls Pakenham VIC | Sleeper, Block & Concrete | Free Quote"
+  description="Specialist retaining wall builders in Pakenham, Officer, Berwick & the Cardinia Shire. Timber sleepers, concrete sleepers, and masonry block walls. Free, fixed-price quotes — call (03) 9003 0223.">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <!-- HERO -->
+
+<style>
+  /* Image-banner integration (added 2026-06-04) */
+  .hero {
+    position: relative;
+    background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.28)), url('/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+  }
+  .hero h1,
+  .hero .hero-sub,
+  .hero .hero-eyebrow,
+  .hero .hero-trust,
+  .hero .accent {
+    color: #fff;
+  }
+  .hero .accent {
+    color: #fcd34d;
+  }
+  .hero .hero-eyebrow {
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .hero .hero-trust {
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  .image-banner {
+    width: 100%;
+    max-height: 460px;
+    overflow: hidden;
+    margin: 0;
+  }
+  .image-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 70%;
+    display: block;
+  }
+  .image-banner figcaption {
+    background: rgba(15, 23, 42, 0.92);
+    color: rgba(255, 255, 255, 0.85);
+    padding: 0.85rem 1.25rem;
+    text-align: center;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+</style>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Pakenham &middot; Officer &middot; Berwick &middot; Cardinia</span>
+      <h1>Pakenham&rsquo;s specialist <span class="accent">retaining wall</span> builders.</h1>
+      <p class="hero-sub">
+        Timber sleeper, concrete sleeper, and masonry block retaining walls built to last
+        across the Cardinia Shire&rsquo;s sloping estates. Site visit and fixed quote within
+        48 hours of your call.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030223">&#9742; Call (03) 9003 0223</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+
+      <div class="hero-trust">
+        <div><strong>48hr</strong>From call to fixed quote</div>
+        <div><strong>$250&ndash;$650/m&sup2;</strong>Typical install range</div>
+        <div><strong>50+yr</strong>Lifespan on concrete walls</div>
+        <div><strong>VBA-aligned</strong>Permit-ready engineering</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">What we build</span>
+      <h2>Four retaining wall types &mdash; built right for your block.</h2>
+      <p class="section-lead">
+        Pakenham&rsquo;s newer estates &mdash; Lakeside, Riverstone, Cardinia Lakes, plus the
+        Officer corridor &mdash; sit on sloping clay-heavy ground that demands proper
+        drainage and the correct wall system. We pick the right one for your site, not the
+        easiest one for us.
+      </p>
+
+      <div class="svc-grid">
+        <a class="svc-card" href="/services/timber-retaining-walls/">
+          <div class="svc-icon" aria-hidden="true">&#9783;</div>
+          <h3>Timber sleeper walls</h3>
+          <p>Treated pine and hardwood sleepers. Most economical option for walls up to 1.2m. 15&ndash;40 year lifespan depending on timber.</p>
+          <span class="svc-link">See timber walls &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/concrete-sleeper-walls/">
+          <div class="svc-icon" aria-hidden="true">&#9619;</div>
+          <h3>Concrete sleeper walls</h3>
+          <p>Steel-reinforced concrete sleepers between galvanised H-posts. 50+ year lifespan. Ideal for taller walls and damp soils.</p>
+          <span class="svc-link">See concrete walls &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/block-retaining-walls/">
+          <div class="svc-icon" aria-hidden="true">&#9633;</div>
+          <h3>Block &amp; masonry walls</h3>
+          <p>Reinforced block walls in a range of finishes. Long lifespan, premium look. Best for feature walls and walls over 1.5m.</p>
+          <span class="svc-link">See block walls &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/excavation-earthworks/">
+          <div class="svc-icon" aria-hidden="true">&#9776;</div>
+          <h3>Excavation &amp; earthworks</h3>
+          <p>Bobcat &amp; mini-excavator works, cut-and-fill, drainage trenching, levelling for sheds, driveways, and pool surrounds.</p>
+          <span class="svc-link">See earthworks &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <figure class="image-banner">
+    <img src="/images/result.jpg" alt="Two-tier sandstone retaining wall with terraced garden" loading="lazy" decoding="async" />
+    <figcaption>Concrete sleeper, sandstone, segmental — engineered.</figcaption>
+  </figure>
+
+
+  <!-- WHY -->
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why a Pakenham specialist</span>
+      <h2>The Cardinia clay problem &mdash; and how we solve it.</h2>
+      <div class="divider"></div>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 60rem;">
+        <div>
+          <h3>Most failed retaining walls have one cause: water.</h3>
+          <p>
+            Pakenham&rsquo;s reactive clay swells when wet and shrinks when dry. A wall built
+            without a proper aggregate drainage zone, geofabric, and ag-pipe outlet
+            will lean, bow, or shear within 5&ndash;10 years &mdash; no matter how thick the
+            sleeper or how deep the post.
+          </p>
+        </div>
+        <div>
+          <h3>Our build standard, every time.</h3>
+          <ul>
+            <li><strong>Footings to spec:</strong> minimum 600mm post depth, concreted to 25 MPa, double for walls over 900mm.</li>
+            <li><strong>Drainage zone:</strong> 200mm of 20mm aggregate behind every wall, wrapped in geofabric.</li>
+            <li><strong>Ag-pipe outlet:</strong> 100mm slotted pipe to a legal stormwater point &mdash; never a soak well.</li>
+            <li><strong>Engineering:</strong> any wall over 1m is engineer-certified before backfill.</li>
+            <li><strong>Permits:</strong> we lodge the building permit with Cardinia Shire on your behalf.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AREAS -->
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Service areas</span>
+      <h2>Where we work.</h2>
+      <p class="lead" style="max-width: 42rem; margin-bottom: 1rem;">
+        We service Pakenham and the surrounding Cardinia Shire estates &mdash; including the
+        steeper Officer Hills and Beaconsfield Upper blocks where retaining walls are
+        almost always required.
+      </p>
+      <div class="areas-grid">
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia/">Cardinia Shire</a>
+        <a class="area-pill" href="/quote/">Pakenham South</a>
+        <a class="area-pill" href="/quote/">Officer South</a>
+        <a class="area-pill" href="/quote/">Garfield</a>
+        <a class="area-pill" href="/quote/">Drouin</a>
+      </div>
+    </div>
+  </section>
+  <figure class="image-banner">
+    <img src="/images/detail.jpg" alt="Sandstone block courses close-up" loading="lazy" decoding="async" />
+    <figcaption>Drainage + agi-line included. AS 4678 compliant over 1m.</figcaption>
+  </figure>
+
+
+  <!-- PROCESS -->
+  <section class="section section-dark">
+    <div class="section-inner">
+      <span class="section-eyebrow">How it works</span>
+      <h2>From phone call to finished wall &mdash; in 4 steps.</h2>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Call or quote online</h3>
+          <p>Tell us your block, the rough wall length and height, and what you&rsquo;re trying to hold back.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Site visit, fixed quote</h3>
+          <p>We come out, take measurements, check soil and drainage, and email a fixed-price quote within 48 hours.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Permits &amp; engineering</h3>
+          <p>If your wall needs a permit (typically over 1m), we lodge it with Cardinia Shire and arrange engineering.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3>Built right, signed off</h3>
+          <p>Excavation, posts, sleepers, drainage, backfill. Final inspection, photos, and 5-year workmanship guarantee.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Common questions</span>
+      <h2>Pakenham retaining wall FAQs.</h2>
+      <div class="divider"></div>
+
+      <div style="max-width: 56rem;">
+        <details style="background:#fff; border:1px solid var(--c-line); border-radius:6px; padding:1rem 1.25rem; margin-bottom:0.75rem;">
+          <summary style="font-weight:700; color:var(--c-navy); cursor:pointer; font-size:1.05rem;">How much does a retaining wall cost in Pakenham?</summary>
+          <p style="margin-top:0.75rem;">Most domestic retaining walls in Pakenham fall between <strong>$250 and $650 per square metre installed</strong>, depending on materials, height, and site access. Timber sleeper walls are the most economical option, while concrete sleeper and masonry block walls cost more but last decades longer. We provide free, fixed-price quotes after a quick site visit.</p>
+        </details>
+        <details style="background:#fff; border:1px solid var(--c-line); border-radius:6px; padding:1rem 1.25rem; margin-bottom:0.75rem;">
+          <summary style="font-weight:700; color:var(--c-navy); cursor:pointer; font-size:1.05rem;">Do I need a permit for a retaining wall in the Cardinia Shire?</summary>
+          <p style="margin-top:0.75rem;">Cardinia Shire generally requires a building permit for retaining walls over 1 metre in height, or any wall that supports a load above (like a driveway or another structure). For walls under 1m on flat residential land, a permit is usually not required &mdash; but boundary setbacks and stormwater rules still apply. We handle the permit lodgement on your behalf when needed.</p>
+        </details>
+        <details style="background:#fff; border:1px solid var(--c-line); border-radius:6px; padding:1rem 1.25rem; margin-bottom:0.75rem;">
+          <summary style="font-weight:700; color:var(--c-navy); cursor:pointer; font-size:1.05rem;">How long does a retaining wall take to build?</summary>
+          <p style="margin-top:0.75rem;">A standard 10&ndash;15m residential retaining wall is typically completed in <strong>2&ndash;4 days</strong> from excavation to backfill. Larger or stepped walls on sloping blocks (common in Officer and the new Cardinia estates) usually take 5&ndash;8 days. We give you a clear schedule before the first sod is turned.</p>
+        </details>
+        <details style="background:#fff; border:1px solid var(--c-line); border-radius:6px; padding:1rem 1.25rem; margin-bottom:0.75rem;">
+          <summary style="font-weight:700; color:var(--c-navy); cursor:pointer; font-size:1.05rem;">Which retaining wall material lasts longest?</summary>
+          <p style="margin-top:0.75rem;">Concrete sleeper walls and masonry block walls typically last <strong>50+ years</strong> with minimal maintenance. Treated pine sleepers usually last 15&ndash;25 years. Hardwood sleepers (red gum, ironbark) last 25&ndash;40 years. We&rsquo;ll recommend the right material for your specific soil, water flow, and budget.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Ready for a free, fixed-price quote?</h2>
+        <p>Call now and we&rsquo;ll have a quote in your inbox within 48 hours.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030223">&#9742; Call (03) 9003 0223</a>
+          <a class="btn btn-ghost" href="/quote/">Request a quote online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section-tint">
+    <div class="section-inner">
+      <h2>Articles &amp; guides for Pakenham</h2>
+      <p>Practical reading from our jobs in Pakenham &mdash; what we charge, what to watch for, when a callout is worth it.</p>
+      <ul class="guides-list">
+          <li><a href="/how-to-choose-retaining-wall-builder-pakenham/">How to choose a retaining wall builder in Pakenham</a></li>
+          <li><a href="/retaining-wall-build-process-pakenham/">How a retaining wall is built in Pakenham — stage by stage</a></li>
+          <li><a href="/retaining-wall-failure-repair-pakenham/">Failing retaining walls in Pakenham — causes, repair, and when to act fast</a></li>
+      </ul>
+    </div>
+  </section>
+
+</Layout>

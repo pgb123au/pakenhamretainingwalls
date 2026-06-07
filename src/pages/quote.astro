@@ -1,0 +1,112 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout
+  title="Free Retaining Wall Quote | Pakenham, Officer, Berwick | Pakenham Retaining Walls"
+  description="Get a free, fixed-price retaining wall quote for your Pakenham, Officer, Berwick or Cardinia Shire property. Site visit and quote within 48 hours."
+  canonical="https://pakenhamretainingwalls.com.au/quote/">
+
+  <section class="hero" style="padding: 2.5rem 0 3rem;">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Free Quote</span>
+      <h1>Get your fixed-price quote.</h1>
+      <p class="hero-sub">
+        Tell us about your block. We&rsquo;ll come out, measure up, and email a fixed-price
+        quote within 48 hours.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="form-wrap">
+        <div class="form-card">
+          <form
+            name="quote"
+            method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            action="/thanks/">
+            <input type="hidden" name="form-name" value="quote" />
+            <p style="display:none;">
+              <label>Don&rsquo;t fill this out: <input name="bot-field" /></label>
+            </p>
+
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="04xx xxx xxx" />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="suburb">Suburb / postcode</label>
+            <input id="suburb" name="suburb" type="text" autocomplete="address-level2" required placeholder="e.g. Pakenham 3810, Officer 3809" />
+
+            <label for="wall-type">What type of wall?</label>
+            <select id="wall-type" name="wall-type">
+              <option value="not-sure">Not sure &mdash; want a recommendation</option>
+              <option value="timber">Timber sleeper</option>
+              <option value="concrete-sleeper">Concrete sleeper</option>
+              <option value="block-masonry">Block / masonry</option>
+              <option value="earthworks-only">Excavation / earthworks only</option>
+            </select>
+
+            <label for="wall-size">Approximate wall size</label>
+            <select id="wall-size" name="wall-size">
+              <option value="under-10m">Under 10 metres long</option>
+              <option value="10-20m">10&ndash;20 metres long</option>
+              <option value="20-40m">20&ndash;40 metres long</option>
+              <option value="40m+">Over 40 metres &mdash; bigger job</option>
+              <option value="not-sure">Not sure yet</option>
+            </select>
+
+            <label for="message">Any details or photos? (optional)</label>
+            <textarea id="message" name="message" rows="4" placeholder="Slope of the block, what you&rsquo;re holding back, deadline, etc."></textarea>
+
+            <button class="btn btn-primary btn-block" type="submit">Send my quote request</button>
+
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--c-muted);">
+              We reply within 1 business day. Free, no obligation.
+            </p>
+          </form>
+        </div>
+
+        <aside class="form-aside">
+          <h3>Prefer to talk?</h3>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9742;</span>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+61390030223">(03) 9003 0223</a>
+              <p style="font-size:0.85rem; color:var(--c-muted); margin:0;">Mon&ndash;Sat 7am&ndash;6pm</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9978;</span>
+            <div>
+              <strong>Service area</strong>
+              <p style="margin:0;">Pakenham, Officer, Berwick, Beaconsfield &amp; the wider Cardinia Shire (within 25km of Pakenham 3810).</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#10004;</span>
+            <div>
+              <strong>What you&rsquo;ll get</strong>
+              <ul style="margin:0.4rem 0 0; padding-left:1rem; font-size:0.95rem; color:var(--c-text);">
+                <li>Free on-site visit and measure-up</li>
+                <li>Fixed-price written quote (no estimates)</li>
+                <li>Recommendation on the right wall type for your soil &amp; slope</li>
+                <li>Permit lodgement included where required</li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</Layout>

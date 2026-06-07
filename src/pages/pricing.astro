@@ -1,0 +1,281 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How tall can you build?", "acceptedAnswer": {"@type": "Answer", "text": "With engineer's drawings: unlimited (subject to council). Standard concrete sleeper: up to 1.5m without bespoke engineering."}}, {"@type": "Question", "name": "Concrete sleeper or block — which?", "acceptedAnswer": {"@type": "Answer", "text": "Sleeper: faster, cheaper per m, straight lines. Block (Versiwall): handles curves, taller heights, geogrid reinforcement option."}}, {"@type": "Question", "name": "Drainage — really needed?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — non-negotiable. Hydrostatic pressure behind unwatered wall = collapse within 3-7 years. Agi-line + free-draining backfill on every wall."}}, {"@type": "Question", "name": "How long does it last?", "acceptedAnswer": {"@type": "Answer", "text": "Concrete sleeper: 25-50 years. Treated timber: 15-20 years. Sandstone: 50+ years. Reinforced concrete: 50+ years."}}, {"@type": "Question", "name": "Build time?", "acceptedAnswer": {"@type": "Answer", "text": "Small wall (10m × 600mm): 2-3 days. Medium (20m × 1m): 4-6 days. Large engineered (30m × 1.5m+): 1-3 weeks."}}, {"@type": "Question", "name": "Permit?", "acceptedAnswer": {"@type": "Answer", "text": "Walls under 1m usually exempt. Walls over 1m require council approval + engineer's drawings. We handle."}}, {"@type": "Question", "name": "Warranty?", "acceptedAnswer": {"@type": "Answer", "text": "Structural: 10 years (engineered walls under design loading). Materials: 25-year manufacturer on concrete sleeper. Drainage: 5 years (subject to maintenance)."}}]};
+const serviceSchema = {"@context": "https://schema.org", "@type": "Service", "serviceType": "Retaining walls", "provider": {"@type": "GeneralContractor", "name": "Pakenham Retaining Walls", "telephone": "+61390030223", "url": "https://pakenhamretainingwalls.com.au", "areaServed": {"@type": "City", "name": "Pakenham"}}, "areaServed": "Pakenham", "url": "https://pakenhamretainingwalls.com.au/pricing/", "offers": {"@type": "AggregateOffer", "priceCurrency": "AUD", "lowPrice": "80", "highPrice": "180000", "offerCount": "15"}};
+const breadcrumbSchema = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://pakenhamretainingwalls.com.au/"}, {"@type": "ListItem", "position": 2, "name": "Pricing", "item": "https://pakenhamretainingwalls.com.au/pricing/"}]};
+---
+<Layout
+  title="Retaining wall prices in Pakenham 2026 | (03) 9003 0223"
+  description="Retaining wall prices in Pakenham — concrete sleeper, sandstone, segmental, engineered. AS 4678 compliant. 2026 rates. Call (03) 9003 0223."
+  canonical="https://pakenhamretainingwalls.com.au/pricing/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Concrete sleeper, sandstone, segmental block — engineered</span>
+      <h1>Retaining wall prices in Pakenham — 2026 build guide</h1>
+      <p class="hero-sub">Retaining walls in Pakenham range from $180/linear m (concrete sleeper, under 600mm) to $880/linear m (engineered reinforced wall over 1.5m). Anything over 1m requires engineer's drawings under AS 4678 — and walls without proper drainage fail within 5 years regardless of how pretty they look.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030223" aria-label="Call (03) 9003 0223">&#9742; Call (03) 9003 0223</a>
+        <a class="btn btn-ghost" href="/quote/">Get a written quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <p class="lead">Below are realistic 2026 per-linear-m fitted rates. Every quote includes drainage + agi-line. Call (03) 9003 0223 for an exact quote.</p>
+    </div>
+  </section>
+
+  <section class="section section-tint">
+    <div class="section-inner">
+      <h2>Typical 2026 prices for retaining walls in Pakenham</h2>
+      <p>Real ranges from our books, not made-up averages. Every quote we issue is itemised against the work below.</p>
+        <table class="pricing-table">
+          <thead><tr><th>Service</th><th>Typical range (AU 2026)</th><th>What's included</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Service"><strong>Concrete sleeper (600mm, per linear m)</strong></td>
+              <td data-label="Price"><span class="price-range">$180 – $280 per m</span></td>
+              <td data-label="Note">H4 sleeper + galvanised post + drainage.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Concrete sleeper (1.0m, per linear m)</strong></td>
+              <td data-label="Price"><span class="price-range">$280 – $420 per m</span></td>
+              <td data-label="Note">Taller wall, engineered.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Concrete sleeper (1.5m, per linear m)</strong></td>
+              <td data-label="Price"><span class="price-range">$420 – $680 per m</span></td>
+              <td data-label="Note">Engineered with batter / dead-man.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Concrete sleeper (over 1.5m)</strong></td>
+              <td data-label="Price"><span class="price-range">Bespoke</span></td>
+              <td data-label="Note">Engineer required, custom build.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Treated timber sleeper (600mm, per linear m)</strong></td>
+              <td data-label="Price"><span class="price-range">$140 – $220 per m</span></td>
+              <td data-label="Note">Budget option. 15-year design life.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Segmental block wall (Versiwall, per sqm face)</strong></td>
+              <td data-label="Price"><span class="price-range">$220 – $380 per sqm</span></td>
+              <td data-label="Note">Interlocking concrete blocks, geogrid reinforced.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Sandstone block (per linear m, 600mm)</strong></td>
+              <td data-label="Price"><span class="price-range">$380 – $580 per m</span></td>
+              <td data-label="Note">Premium look.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Bluestone / heritage stone (per linear m, 600mm)</strong></td>
+              <td data-label="Price"><span class="price-range">$580 – $880 per m</span></td>
+              <td data-label="Note">Heritage homes.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Engineered reinforced concrete wall (per sqm face)</strong></td>
+              <td data-label="Price"><span class="price-range">$480 – $880 per sqm</span></td>
+              <td data-label="Note">Cast in place. For walls over 2m.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Drainage — ag-line + aggregate (included)</strong></td>
+              <td data-label="Price"><span class="price-range">$45 – $85 per linear m</span></td>
+              <td data-label="Note">On every wall we build.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Geofabric (segmental walls)</strong></td>
+              <td data-label="Price"><span class="price-range">Included</span></td>
+              <td data-label="Note">Required for proper drainage.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Fill (per cubic m delivered + spread)</strong></td>
+              <td data-label="Price"><span class="price-range">$45 – $95 per cubic m</span></td>
+              <td data-label="Note"></td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Excavation + spoil removal (per linear m)</strong></td>
+              <td data-label="Price"><span class="price-range">$45 – $95 per m</span></td>
+              <td data-label="Note"></td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Engineer's design + drawings (over 1m)</strong></td>
+              <td data-label="Price"><span class="price-range">$1,400 – $2,800</span></td>
+              <td data-label="Note">Required for council approval.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Council permit (where required)</strong></td>
+              <td data-label="Price"><span class="price-range">$480 – $1,400</span></td>
+              <td data-label="Note">Walls over 1m or in heritage zone.</td>
+            </tr>
+          </tbody>
+        </table>
+      <p class="table-foot"><em>Prices indicative for Pakenham in 2026. Final quote depends on your site — call (03) 9003 0223 for an exact number.</em></p>
+    </div>
+  </section>
+
+  <section class="cta-card-section">
+    <div class="cta-card">
+      <div class="cta-card-body">
+        <h3>Need an exact price for your job?</h3>
+        <p>Most quotes ready within 24 hours of the site visit. No-obligation, free, written.</p>
+      </div>
+      <div class="cta-card-actions">
+        <a class="btn btn-primary" href="tel:+61390030223">&#9742; Call (03) 9003 0223</a>
+        <a class="btn btn-ghost" href="/quote/">Online quote form</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>What changes the price on your job</h2>
+      <p>The ranges above are the starting point. These five factors are what move a quote up or down within (or sometimes outside) those bands.</p>
+        <ol class="numbered-list">
+          <li>Height — 600mm cheap; every 500mm of height roughly doubles cost.</li>
+          <li>Material — concrete sleeper standard, timber budget, stone premium.</li>
+          <li>Engineering — over 1m needs drawings + permit.</li>
+          <li>Drainage — agi-line + free-draining backfill is non-negotiable.</li>
+          <li>Site access — bobcat / mini-excavator access affects build time.</li>
+        </ol>
+    </div>
+  </section>
+
+  <section class="section section-warn">
+    <div class="section-inner">
+      <h2>Red flags &mdash; what to watch for in quotes</h2>
+      <p>We see these patterns every week from operators we'd never recommend. If a quote you've received contains one of these, ask before signing.</p>
+        <ul class="bullet-list">
+          <li>Walls over 1m without engineer's drawings — illegal + insurance void.</li>
+          <li>Quotes without drainage — wall settles + tilts in year 2.</li>
+          <li>Cheap-end timber sleepers without H4 treatment — rot in 5-7 years.</li>
+          <li>Concrete sleeper walls without galvanised posts — rust at the joint.</li>
+          <li>Quotes that don't include geofabric on segmental walls — fill washes out.</li>
+        </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>How to get an accurate quote in 5 minutes</h2>
+      <p>Have the following ready when you call (03) 9003 0223 (or jot it on the quote form) and we can give you a real number in one call, not five.</p>
+        <ol class="numbered-list">
+          <li>Approximate linear m + height.</li>
+          <li>Photo of site + slope.</li>
+          <li>Material preference (concrete sleeper / timber / stone / segmental).</li>
+          <li>Drainage situation (where water comes from + goes to).</li>
+          <li>Council jurisdiction.</li>
+        </ol>
+    </div>
+  </section>
+
+  <section class="section section-tint">
+    <div class="section-inner">
+      <h2>Frequently asked questions</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-q"><strong>How tall can you build?</strong></summary>
+          <div class="faq-a">With engineer's drawings: unlimited (subject to council). Standard concrete sleeper: up to 1.5m without bespoke engineering.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Concrete sleeper or block — which?</strong></summary>
+          <div class="faq-a">Sleeper: faster, cheaper per m, straight lines. Block (Versiwall): handles curves, taller heights, geogrid reinforcement option.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Drainage — really needed?</strong></summary>
+          <div class="faq-a">Yes — non-negotiable. Hydrostatic pressure behind unwatered wall = collapse within 3-7 years. Agi-line + free-draining backfill on every wall.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>How long does it last?</strong></summary>
+          <div class="faq-a">Concrete sleeper: 25-50 years. Treated timber: 15-20 years. Sandstone: 50+ years. Reinforced concrete: 50+ years.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Build time?</strong></summary>
+          <div class="faq-a">Small wall (10m × 600mm): 2-3 days. Medium (20m × 1m): 4-6 days. Large engineered (30m × 1.5m+): 1-3 weeks.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Permit?</strong></summary>
+          <div class="faq-a">Walls under 1m usually exempt. Walls over 1m require council approval + engineer's drawings. We handle.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Warranty?</strong></summary>
+          <div class="faq-a">Structural: 10 years (engineered walls under design loading). Materials: 25-year manufacturer on concrete sleeper. Drainage: 5 years (subject to maintenance).</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-card-section">
+    <div class="cta-card cta-card-primary">
+      <div class="cta-card-body">
+        <h3>Ready for an exact quote on your Pakenham job?</h3>
+        <p>Free written quotes. No obligation. Same-day callbacks on most enquiries.</p>
+      </div>
+      <div class="cta-card-actions">
+        <a class="btn btn-primary btn-large" href="tel:+61390030223" aria-label="Call (03) 9003 0223">&#9742; Call (03) 9003 0223</a>
+        <a class="btn btn-ghost btn-large" href="/quote/">Get a quote online</a>
+      </div>
+    </div>
+  </section>
+
+  <style>
+
+    .lead { font-size: 1.125rem; line-height: 1.7; max-width: 70rem; margin: 0 auto; color: var(--text, #1f2937); }
+    .section-tint { background: rgba(0, 0, 0, 0.025); }
+    .section-warn { background: rgba(180, 100, 0, 0.04); }
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .pricing-table thead { background: #1f2937; color: #fff; }
+    .pricing-table th { padding: 0.85rem 1rem; text-align: left; font-weight: 600; font-size: 0.95rem; }
+    .pricing-table td { padding: 0.85rem 1rem; border-top: 1px solid #e5e7eb; vertical-align: top; }
+    .pricing-table tr:nth-child(even) td { background: rgba(0,0,0,0.015); }
+    .pricing-table .price-range { font-weight: 600; color: #047857; white-space: nowrap; }
+    .table-foot { font-size: 0.9rem; color: #6b7280; margin-top: 0.5rem; }
+    @media (max-width: 640px) {
+      .pricing-table thead { display: none; }
+      .pricing-table, .pricing-table tbody, .pricing-table tr, .pricing-table td { display: block; width: 100%; }
+      .pricing-table tr { border-bottom: 2px solid #e5e7eb; padding: 0.75rem 0; }
+      .pricing-table td { border: none; padding: 0.35rem 0.5rem; }
+      .pricing-table td:before { content: attr(data-label) ": "; font-weight: 600; color: #6b7280; display: inline-block; min-width: 5rem; }
+      .pricing-table td:first-child:before { display: none; }
+    }
+    .numbered-list, .bullet-list { max-width: 65rem; margin: 1rem 0; padding-left: 1.5rem; line-height: 1.7; }
+    .numbered-list li, .bullet-list li { margin: 0.65rem 0; }
+    .cta-card-section { padding: 2rem 1rem; }
+    .cta-card {
+      max-width: 56rem; margin: 0 auto;
+      background: #fff; border: 1px solid #e5e7eb; border-radius: 10px;
+      padding: 1.75rem; display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .cta-card-primary { background: #1f2937; color: #fff; border-color: #1f2937; }
+    .cta-card-primary h3 { color: #fff; }
+    .cta-card-body { flex: 1 1 24rem; }
+    .cta-card-body h3 { margin: 0 0 0.4rem 0; font-size: 1.35rem; line-height: 1.3; }
+    .cta-card-body p { margin: 0; }
+    .cta-card-actions { display: flex; gap: 0.65rem; flex-wrap: wrap; }
+    .btn-large { padding: 0.85rem 1.5rem; font-size: 1.05rem; }
+    .faq-list { max-width: 60rem; margin: 1rem auto; }
+    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 0.85rem 0; }
+    .faq-item[open] { background: rgba(0,0,0,0.02); }
+    .faq-q { cursor: pointer; padding: 0.4rem 0.5rem; font-size: 1.05rem; }
+    .faq-q:hover { color: #047857; }
+    .faq-a { padding: 0.65rem 0.5rem 0.85rem 0.5rem; line-height: 1.7; color: #4b5563; }
+
+  </style>
+</Layout>

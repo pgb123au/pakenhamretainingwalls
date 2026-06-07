@@ -1,0 +1,417 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does it take to build a retaining wall in Pakenham?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A typical residential wall of 10&ndash;15 lineal metres at 900mm height takes 2&ndash;3 trade days on site once the permit and engineering are in hand. Engineered walls over 1m that require a building permit add 2&ndash;6 weeks for the engineering and permit process before construction starts. Full timeline: site assessment 1&ndash;2 days, engineering and permit 2&ndash;6 weeks, construction 2&ndash;3 days."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is drainage so important in a Pakenham retaining wall build?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cardinia Shire sits on reactive M&ndash;H clay that holds and absorbs water heavily in winter. Without a sub-soil ag-drain, free-draining aggregate backfill, and functioning weep holes, hydrostatic pressure builds behind the wall every wet season. That pressure is the number-one cause of retaining wall bulging and failure in Pakenham &mdash; usually visible within 5&ndash;8 years of a wall built without proper drainage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How deep do post footings need to be for a retaining wall in Pakenham?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As a rule of thumb, post embed depth should be roughly equal to the retained height for timber sleeper walls on reactive clay &mdash; so a 900mm-high wall needs posts embedded about 900mm. For concrete sleeper walls the engineer typically specifies 600&ndash;1,000mm of embedment depending on post spacing and retained height. These depths are deeper than the Bayside or Mornington Peninsula defaults because Cardinia clay is reactive and heavier-loaded."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between compacted backfill and normal backfill in a retaining wall?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Free-draining aggregate (20mm scoria or crushed rock) is placed immediately behind the wall to allow water to move to the ag-drain. Behind that, engineered fill or suitable site material is placed and compacted in 150&ndash;200mm layers. Uncompacted backfill settles unevenly, loads the wall unpredictably, and can leave voids that collapse. Proper compaction in layers is what keeps the finished surface stable above the wall."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does excavation on Pakenham clay cause extra complications?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Cardinia grey clay is dense in summer, sticky and waterlogged in winter. Hand-digging below 400mm is impractical &mdash; a compact excavator is needed. Clay spoil is heavy and cannot be spread across the site without causing drainage problems elsewhere, so cartage off-site is usually required. Allow $60&ndash;$120 per lineal metre for excavation and clay spoil removal on top of the wall construction cost."
+      }
+    }
+  ]
+};
+---
+<Layout
+  title="The Retaining Wall Build Process in Pakenham 2026 | Step-by-Step Timeline | (03) 9003 0108"
+  description="Every stage of a Pakenham retaining wall build: site assessment, engineering and permit, excavation, the drainage layer that makes or breaks it, construction and backfill."
+  canonical="https://pakenhamretainingwalls.com.au/retaining-wall-build-process-pakenham/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Step-by-step &mdash; Pakenham &amp; Cardinia Shire</span>
+      <h1>How a retaining wall is <span class="accent">built in Pakenham</span> &mdash; stage by stage.</h1>
+      <p class="hero-sub">
+        From the first site visit to finished backfill, this is every stage of a properly
+        built retaining wall on Cardinia&rsquo;s reactive clay. The drainage layer is the
+        one most builders rush or skip &mdash; it is also the one that determines whether
+        your wall is still standing in fifteen years.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Stage 1 &mdash; before anything is dug</span>
+      <h2>Site assessment and set-out.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <p>
+          A proper assessment takes an hour on site, not fifteen minutes with a tape measure.
+          We are reading the slope, the soil class, what sits above the wall (driveway, shed,
+          building line, neighbour&rsquo;s yard), where the drainage will discharge, and
+          whether the block is in any Cardinia Shire overlay that affects what we can build.
+          We also check for services &mdash; water mains, sewer, gas, communications &mdash;
+          before anything is quoted, not after excavation has started.
+        </p>
+        <p style="margin-top: 1rem;">
+          Set-out involves marking the wall line with pegs and string, confirming the retained
+          height at every post position, and identifying any grade changes along the wall that
+          require stepping the footing or the top course. On sloped Pakenham blocks this is
+          not trivial &mdash; a 15-metre wall can have a 400mm grade change from one end to
+          the other that affects post depth, step location, and total materials.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Timeline: 1&ndash;2 days (including quote)</h3>
+        <p>
+          Site visit day one, written fixed-price quote within 48 hours. If engineering is
+          required, the scope of works will note it explicitly with a separate line item.
+          Nothing starts on site until the full scope is agreed in writing.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Stage 2 &mdash; documentation</span>
+      <h2>Engineering and building permit &mdash; when required.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <p>
+          For walls over 1m retained height, or any wall with a surcharge above it (driveway,
+          structure, loaded slope), a registered structural engineer is engaged to produce the
+          design drawings. We brief the engineer with the site assessment data: soil class,
+          retained height, post spacing, load conditions, drainage arrangement. The engineer
+          produces a certified design drawing and specification. See our
+          <a href="/engineering/">engineering and permits guide</a> for how this process works
+          in Cardinia Shire.
+        </p>
+
+        <h3 style="margin-top: 2rem;">What the engineer checks on reactive Pakenham clay</h3>
+        <ul>
+          <li>Footing depth based on reactive soil movement calculations (not rule-of-thumb)</li>
+          <li>Post section size (steel grade, wall thickness) relative to bending moment at the base</li>
+          <li>Whether a geotech soil test is required (common on sites with unusual fill or slope)</li>
+          <li>Drainage specification &mdash; ag-drain sizing, backfill aggregate depth, discharge point</li>
+          <li>Whether the wall needs tie-back anchors or a deadman system at this height and load</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Building permit lodgement</h3>
+        <p>
+          Once the engineering drawings are certified, we lodge the building permit application
+          with a registered building surveyor. Cardinia Shire processing times vary; allow
+          2&ndash;4 weeks for standard residential permits. A
+          <a href="/permits/">building permit page</a> with the full checklist is on this site
+          if you want to understand what is lodged and why.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Timeline: 2&ndash;6 weeks (engineering plus permit)</h3>
+        <p>
+          This is the step that surprises owners who expect to start digging within a week of
+          quoting. Engineering typically takes 3&ndash;7 business days. Permit processing adds
+          10&ndash;28 business days depending on surveyor workload. Plan for 4 weeks minimum
+          from quote acceptance to spade in the ground on a permitted job.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Stage 3 &mdash; ground preparation</span>
+      <h2>Excavation in Pakenham&rsquo;s reactive clay.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <p>
+          Cardinia grey clay is dense and sticky. Anything below 400mm requires a compact
+          track excavator &mdash; hand-digging post holes by hand in summer is possible to
+          300mm, then impractical. In winter the clay becomes waterlogged and clings. We
+          schedule clay excavation around recent rain when we can; wet clay adds time and
+          cartage cost.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Post hole excavation</h3>
+        <p>
+          Post holes are bored or excavated to the engineer&rsquo;s specified depth &mdash;
+          typically 600&ndash;1,000mm for a 900mm-high concrete sleeper wall, deeper if the
+          post carries higher load or the soil is softer. Holes are kept to diameter to
+          minimise the concrete volume and keep the footing tight. On reactive clay, a snug
+          footing that does not crack away from the post is better than an oversized one.
+          For a full view of our <a href="/services/excavation-earthworks/">excavation
+          and earthworks</a> capability, see the dedicated services page.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Spoil removal</h3>
+        <p>
+          Clay spoil from post holes and trench excavation is not suitable for general
+          fill on the block &mdash; it holds water and causes drainage problems elsewhere.
+          Spoil is loaded and carted off-site. Allow for this in the budget; it is not an
+          optional line item on a clay site.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Timeline: half to one day for a standard 15m wall</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Stage 4 &mdash; the most important step</span>
+      <h2>The drainage layer that makes or breaks the wall.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <p>
+          Drainage failure is the single biggest cause of retaining wall failure in Pakenham
+          and Cardinia Shire. Not poor construction, not the wrong sleeper type &mdash;
+          drainage. A wall that has no ag-drain, or has one that is blocked, crushed, or
+          terminates nowhere, is accumulating hydrostatic pressure every wet season. That
+          pressure is lateral &mdash; it pushes the wall outward. Eventually the wall bows,
+          cracks, or topples.
+        </p>
+
+        <h3 style="margin-top: 2rem;">The correct drainage stack &mdash; layer by layer</h3>
+        <ol>
+          <li style="margin-bottom: 1rem;">
+            <strong>Weep holes.</strong> Gaps at the base of the wall (every 1.5&ndash;2m in
+            a timber or concrete sleeper wall, or purpose-built weep holes in a block wall)
+            that allow any water that gets past the aggregate to escape at the front face of
+            the wall. They are a last-resort overflow path, not the primary drainage.
+          </li>
+          <li style="margin-bottom: 1rem;">
+            <strong>Sub-soil ag-drain.</strong> 100mm diameter slotted HDPE pipe wrapped in
+            geo-fabric sock, laid at the base of the wall on a fall to a discharge point &mdash;
+            either a stormwater pit, a charged system, or daylight at the end of the wall.
+            The ag-drain is the primary drainage path. It must have a fall; it cannot lie flat.
+          </li>
+          <li style="margin-bottom: 1rem;">
+            <strong>Free-draining aggregate.</strong> 20mm scoria or 20mm crushed rock placed
+            immediately behind the wall to at least 300mm depth above the ag-drain. This is
+            not sand, not site fill, not general backfill. Scoria is light, drains freely, and
+            does not pack. The aggregate layer transmits water from the retained soil down to
+            the ag-drain quickly enough that pressure does not build.
+          </li>
+          <li style="margin-bottom: 1rem;">
+            <strong>Geo-fabric separator.</strong> A layer of filter fabric between the
+            free-draining aggregate and the retained clay soil behind it. Without this,
+            clay fines migrate into the aggregate over years and choke it, defeating the
+            drainage system from behind.
+          </li>
+        </ol>
+        <p>
+          A wall built without every one of these components is not built to last in Pakenham&rsquo;s
+          climate. Our <a href="/drainage/">drainage behind retaining walls page</a> covers
+          every component in detail.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Timeline: half a day added to the construction phase</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Stage 5 &mdash; construction</span>
+      <h2>Footing, post, and wall construction.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Posts and concrete footings</h3>
+        <p>
+          Posts (H-section galvanised steel for concrete sleeper walls; C-section galvanised
+          for timber sleeper walls) are set in the bored holes with concrete footings poured
+          around them. Post plumb is checked before the concrete sets. Footings are allowed
+          to cure before the wall panels are loaded &mdash; 24 hours minimum for residential
+          concrete mixes in warm weather, longer in cold or wet conditions. Rushing this step
+          is how posts tilt before the first sleeper goes in.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Wall panel installation &mdash; concrete sleeper walls</h3>
+        <p>
+          Pre-cast <a href="/services/concrete-sleeper-walls/">concrete sleeper panels</a>
+          (typically 1500mm &times; 200mm &times; 80mm) are lowered into the post flanges in
+          sequence, one course at a time, with the ag-drain and aggregate installed
+          progressively behind each course rather than all at once. Installing drainage
+          progressively &mdash; not as a single backfill operation at the end &mdash; ensures
+          every course has aggregate behind it and the geo-fabric stays in position.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Timber sleeper walls</h3>
+        <p>
+          H4-treated pine sleepers are fixed to C-section posts using structural coach screws
+          (minimum 12mm &times; 180mm, countersunk flush). Joints are staggered between
+          courses to eliminate vertical lines of weakness. Drainage is installed progressively
+          as courses are built up. See our <a href="/services/timber-retaining-walls/">timber
+          retaining wall page</a> for the full specification.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Block walls</h3>
+        <p>
+          Reinforced masonry block walls require a concrete footing with reo bar starter
+          dowels, block-by-block laying on mortar beds, core-fill concrete poured in lifts
+          with vibration, and coping. Block walls typically take longer per lineal metre than
+          sleeper walls &mdash; factor 3&ndash;4 trade days for a 15m wall at 900mm. See the
+          <a href="/services/block-retaining-walls/">block retaining wall page</a> for design
+          and cost detail.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Timeline: 2&ndash;4 trade days depending on wall type and length</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Stage 6 &mdash; finishing</span>
+      <h2>Compacted backfill, restoration, and sign-off.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <p>
+          Once the wall is fully constructed and the drainage layer is in place, the remaining
+          backfill zone is filled with compacted engineered fill or suitable site material.
+          This is not a single dump-and-level operation &mdash; fill is placed in 150&ndash;200mm
+          layers and compacted with a vibrating plate compactor before the next layer goes in.
+          Uncompacted backfill settles unevenly, causes surface subsidence, and can load the
+          wall unpredictably as the soil finds its natural angle of repose. Compaction in
+          layers is the correct method.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Surface restoration</h3>
+        <p>
+          Topsoil is reinstated over the compacted fill, disturbed lawn or garden areas are
+          tidied, and any concrete or spoil from the construction zone is removed. The site is
+          left in the same condition &mdash; or better &mdash; as we found it outside the
+          direct construction area.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Building permit sign-off (where applicable)</h3>
+        <p>
+          For permitted walls, the building surveyor conducts a mandatory inspection before
+          backfilling in some cases, and a final inspection once the wall is complete. We
+          coordinate the inspection timing so it does not delay the construction schedule
+          unnecessarily. The owner receives a certificate of final inspection when sign-off
+          is issued. This certificate is important for property sale disclosure and for
+          insurance purposes.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Timeline: half a day to one day</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Frequently asked questions</span>
+      <h2>Build process questions answered.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>How long does it take to build a retaining wall in Pakenham?</h3>
+        <p>
+          A typical residential wall of 10&ndash;15 lineal metres at 900mm height takes
+          2&ndash;3 trade days on site once the permit and engineering are in hand.
+          Engineered walls over 1m that require a building permit add 2&ndash;6 weeks for
+          the engineering and permit process before construction starts. Full timeline: site
+          assessment 1&ndash;2 days, engineering and permit 2&ndash;6 weeks, construction
+          2&ndash;3 days.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Why is drainage so important in a Pakenham retaining wall build?</h3>
+        <p>
+          Cardinia Shire sits on reactive M&ndash;H clay that holds and absorbs water heavily
+          in winter. Without a sub-soil ag-drain, free-draining aggregate backfill, and
+          functioning weep holes, hydrostatic pressure builds behind the wall every wet season.
+          That pressure is the number-one cause of retaining wall bulging and failure in
+          Pakenham &mdash; usually visible within 5&ndash;8 years of a wall built without
+          proper drainage.
+        </p>
+
+        <h3 style="margin-top: 2rem;">How deep do post footings need to be for a retaining wall in Pakenham?</h3>
+        <p>
+          As a rule of thumb, post embed depth should be roughly equal to the retained height
+          for timber sleeper walls on reactive clay &mdash; so a 900mm-high wall needs posts
+          embedded about 900mm. For concrete sleeper walls the engineer typically specifies
+          600&ndash;1,000mm of embedment depending on post spacing and retained height. These
+          depths are deeper than the Bayside or Mornington Peninsula defaults because Cardinia
+          clay is reactive and heavier-loaded.
+        </p>
+
+        <h3 style="margin-top: 2rem;">What is the difference between compacted backfill and normal backfill?</h3>
+        <p>
+          Free-draining aggregate (20mm scoria or crushed rock) is placed immediately behind
+          the wall to allow water to move to the ag-drain. Behind that, engineered fill or
+          suitable site material is placed and compacted in 150&ndash;200mm layers. Uncompacted
+          backfill settles unevenly, loads the wall unpredictably, and can leave voids that
+          collapse. Proper compaction in layers is what keeps the finished surface stable above
+          the wall.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Does excavation on Pakenham clay cause extra complications?</h3>
+        <p>
+          Yes. Cardinia grey clay is dense in summer, sticky and waterlogged in winter.
+          Hand-digging below 400mm is impractical &mdash; a compact excavator is needed.
+          Clay spoil is heavy and cannot be spread across the site without causing drainage
+          problems elsewhere, so cartage off-site is usually required. Allow $60&ndash;$120
+          per lineal metre for excavation and clay spoil removal on top of the wall
+          construction cost.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/cardinia/">Cardinia</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Get a fixed-price quote for your Pakenham retaining wall.</h2>
+        <p>Free on-site assessment. Engineering and drainage included in the scope, not added later.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Request a free quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
